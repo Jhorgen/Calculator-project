@@ -1,8 +1,17 @@
+
+// var // function (perameters)
 var add = function(number1, number2) {
-  return number1 + number2;
+
+  // result of above in an equation
+  return number1 / (number2 * number2) * 703;
 };
 
-var number1 = parseInt(prompt("Enter a number:"));
-var number2 = parseInt(prompt("Enter another number:"));
+//assigning your vars// turning strings into numbers (parseInt)/ string
+var number1 = parseInt(prompt("Enter weight in pounds"));
+var number2 = parseInt(prompt("Enter Height in inches:"));
 
-alert(add(number1, number2));
+//result // add created function
+var result = add(number1, number2).toFixed(2);
+
+//computer prompt
+alert("Your BMI is" + " " + result);
